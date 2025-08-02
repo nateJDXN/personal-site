@@ -1,0 +1,68 @@
+/* Base */
+
+html, body {
+  height: 100%;
+  font-family: "Courier", monospace;
+  color: #ECDFCC;
+  background-color: #1E201E;
+  font-size: 16px;
+}
+
+.padded {
+  padding-top: 50px;
+  padding-bottom: 30px;
+  line-height: 30px;
+}
+
+.main-content {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  line-height: 30px;
+}
+
+div.main-content h2 {
+  padding-top: 15px;
+  padding-bottom: 5px;
+}
+
+header {
+  padding-top: 100px;
+}
+
+header h1, h5 {
+  display: inline;
+}
+
+code {
+  padding: 2px 4px;
+  vertical-align: text-bottom;
+}
+
+a:not(.name) {
+  color: #697565;
+}
+
+/* Main heading */
+
+.name {
+  font-size: 2.5rem;
+  font-weight: 300;
+  margin-bottom: 15px;
+  color: #ECDFCC;
+  letter-spacing: 1px;
+}
+
+/* Tagline */
+.tagline {
+  font-size: 1rem;
+  color: #697565;
+  margin-bottom: 40px;
+  font-weight: 300;
+}
+
+
+h1, h2, strong, .name{
+  color: #ECDFCC;
+  font-weight: 500;
+  text-decoration: none;
+}

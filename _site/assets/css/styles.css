@@ -1,0 +1,598 @@
+@charset "UTF-8";
+/* https://www.joshwcomeau.com/css/custom-css-reset/ */
+/*
+  1. Use a more-intuitive box-sizing model.
+*/
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+/*
+  2. Remove default margin
+*/
+* {
+  margin: 0;
+}
+
+/*
+  3. Allow percentage-based heights in the application
+*/
+html, body {
+  height: 100%;
+}
+
+/*
+  Typographic tweaks!
+  4. Add accessible line-height
+  5. Improve text rendering
+*/
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+/*
+  6. Improve media defaults
+*/
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+/*
+  7. Remove built-in form typography styles
+*/
+input, button, textarea, select {
+  font: inherit;
+}
+
+/*
+  8. Avoid text overflows
+*/
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+
+/*
+  9. Create a root stacking context
+*/
+#root, #__next {
+  isolation: isolate;
+}
+
+.wrapper-main, .wrapper-header, .wrapper-footer {
+  width: 100%;
+  margin: 0 auto;
+  max-width: 900px;
+}
+
+/* Sticky Footer */
+.wrapper {
+  min-height: calc(100vh - 40px);
+}
+
+.wrapper-footer {
+  height: 40px;
+}
+
+/* End Sticky Footer */
+/* Base */
+html, body {
+  height: 100%;
+  font-family: "Courier", monospace;
+  color: #ECDFCC;
+  background-color: #1E201E;
+  font-size: 16px;
+}
+
+.padded {
+  padding-top: 50px;
+  padding-bottom: 30px;
+  line-height: 30px;
+}
+
+.main-content {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  line-height: 30px;
+}
+
+div.main-content h2 {
+  padding-top: 15px;
+  padding-bottom: 5px;
+}
+
+header {
+  padding-top: 100px;
+}
+
+header h1, h5 {
+  display: inline;
+}
+
+code {
+  padding: 2px 4px;
+  vertical-align: text-bottom;
+}
+
+a:not(.name) {
+  color: #697565;
+}
+
+/* Main heading */
+.name {
+  font-size: 2.5rem;
+  font-weight: 300;
+  margin-bottom: 15px;
+  color: #ECDFCC;
+  letter-spacing: 1px;
+}
+
+/* Tagline */
+.tagline {
+  font-size: 1rem;
+  color: #697565;
+  margin-bottom: 40px;
+  font-weight: 300;
+}
+
+h1, h2, strong, .name {
+  color: #ECDFCC;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.footer-text {
+  display: block;
+  position: relative;
+  font-size: 14px;
+}
+
+.header {
+  padding-top: 35px;
+}
+
+.header nav {
+  padding-top: 10px;
+  padding-bottom: 20px;
+}
+
+.header nav a {
+  padding-right: 3px;
+}
+
+.float-left {
+  float: left;
+}
+
+.float-right {
+  float: right;
+}
+
+.float-center {
+  text-align: center;
+}
+
+.categories {
+  border: 1px solid #697565;
+  border-radius: 6px;
+  padding: 12px 20px;
+  display: block;
+  text-align: center;
+  margin: 20px auto 50px auto;
+  width: fit-content;
+}
+
+.category-link {
+  color: #697565;
+  text-decoration: none;
+  margin: 0 8px;
+  font-size: 0.9rem;
+  transition: color 0.2s ease;
+}
+
+.category-link:hover {
+  color: #ECDFCC;
+}
+
+.post-item {
+  display: block;
+  position: relative;
+  line-height: 24px;
+  padding-bottom: 5px;
+  margin: 5px 0;
+}
+
+.post-summary {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.post-nav {
+  padding-top: 100px;
+  text-align: center;
+}
+
+.category-summary {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.category-all-nav, .category-header {
+  display: block;
+  position: relative;
+  line-height: 24px;
+  margin: 5px 0;
+  padding-bottom: 10px;
+  padding-top: 10px;
+}
+
+.post-info {
+  padding-bottom: 30px;
+  margin: 20px 0 5px;
+  padding-top: 20px;
+}
+
+.post-content {
+  line-height: 35px;
+  padding-bottom: 50px;
+}
+
+.post-content h1, h3, code, pre {
+  padding-bottom: 10px;
+  padding-top: 10px;
+}
+
+.post-content h2 {
+  padding-bottom: 20px;
+  padding-top: 20px;
+}
+
+@media only screen and (max-width: 479px) {
+  .mobile-hide {
+    display: none !important;
+  }
+  .footer-text {
+    float: left !important;
+  }
+  html {
+    margin: 1em !important;
+  }
+}
+.breadcrumb-container {
+  display: flex;
+  align-items: center;
+  font-family: "Courier", monospace;
+  font-size: 16px;
+  color: #ECDFCC;
+  background-color: rgba(30, 32, 30, 0.9);
+  padding: 8px 12px;
+  border-radius: 6px;
+  backdrop-filter: blur(10px);
+}
+
+.breadcrumb-link {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #ECDFCC;
+  transition: color 0.2s ease;
+}
+
+.breadcrumb-link:hover {
+  color: #697565;
+}
+
+.breadcrumb-current {
+  display: flex;
+  align-items: center;
+  color: #697565;
+}
+
+.breadcrumb-icon {
+  margin-right: 6px;
+  font-size: 14px;
+}
+
+.breadcrumb-text {
+  font-weight: 400;
+}
+
+.breadcrumb-separator {
+  margin: 0 12px;
+  color: #697565;
+  font-weight: 300;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .breadcrumb-nav {
+    top: 15px;
+    left: 15px;
+  }
+  .breadcrumb-container {
+    font-size: 14px;
+    padding: 6px 10px;
+  }
+  .breadcrumb-separator {
+    margin: 0 8px;
+  }
+}
+/* Button Controls */
+.resume-controls {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  padding: 20px 0;
+  background-color: #1E201E;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.resume-btn {
+  padding: 10px 20px;
+  border: 1px solid #697565;
+  background-color: transparent;
+  color: #ECDFCC;
+  text-decoration: none;
+  font-family: "Courier", monospace;
+  font-size: 14px;
+  border-radius: 4px;
+  transition: all 0.2s ease;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.resume-btn:hover {
+  background-color: #697565;
+  color: #1E201E;
+}
+
+.resume-btn.active {
+  background-color: #ECDFCC;
+  color: #1E201E;
+  border-color: #ECDFCC;
+}
+
+/* PDF Embedding Styles */
+.pdf {
+  width: 100%;
+  height: 100vh;
+  border: none;
+  display: block;
+}
+
+/* Container for better control */
+.pdf-container {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+}
+
+/* Fallback message styling */
+.pdf-fallback {
+  text-align: center;
+  padding: 40px 20px;
+  color: #697565;
+  font-family: "Courier", monospace;
+}
+
+.pdf-fallback a {
+  color: #ECDFCC;
+  text-decoration: underline;
+}
+
+.pdf-fallback a:hover {
+  color: #697565;
+}
+
+/* Loading state */
+.pdf-loading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: calc(100vh - 80px);
+  color: #697565;
+  font-family: "Courier", monospace;
+}
+
+/* Button icons */
+.btn-icon {
+  font-size: 12px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .resume-controls {
+    padding: 15px 0;
+    gap: 10px;
+  }
+  .resume-btn {
+    padding: 8px 16px;
+    font-size: 12px;
+  }
+  .pdf {
+    height: calc(100vh - 60px);
+  }
+  .pdf-container {
+    height: calc(100vh - 60px);
+  }
+  .pdf-loading {
+    height: calc(100vh - 60px);
+  }
+}
+/* About Page Layout */
+.about-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  font-family: "Courier", monospace;
+  color: #ECDFCC;
+}
+
+/* Two Column Section */
+.about-hero {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 60px;
+  margin-bottom: 80px;
+  align-items: start;
+}
+
+/* Left Column - Photo and Header */
+.about-left {
+  text-align: center;
+}
+
+.about-photo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 200px;
+  height: 200px;
+  border-radius: 8px;
+  object-fit: cover;
+  margin-bottom: 20px;
+  border: 2px solid #697565;
+}
+
+.about-name {
+  font-size: 1.8rem;
+  font-weight: 400;
+  margin-bottom: 8px;
+  color: #ECDFCC;
+}
+
+.about-title {
+  font-size: 1rem;
+  color: #697565;
+  font-weight: 300;
+}
+
+/* Right Column - Description */
+.about-right {
+  padding-left: 20px;
+}
+
+.about-description {
+  font-size: 1rem;
+  line-height: 1.7;
+  color: #ECDFCC;
+}
+
+.about-description p {
+  margin-bottom: 20px;
+}
+
+/* Skills and Tools Section */
+.about-lists {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  margin-top: 60px;
+}
+
+.about-list-section {
+  padding: 30px;
+  border-radius: 5px;
+  border: 1px solid #697565;
+}
+
+.about-list-title {
+  font-size: 1.3rem;
+  font-weight: 400;
+  margin-bottom: 20px;
+  color: #ECDFCC;
+  text-align: center;
+}
+
+.about-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.about-list li {
+  padding: 8px 0;
+  border-bottom: 1px solid rgba(105, 117, 101, 0.2);
+  color: #697565;
+  position: relative;
+  padding-left: 20px;
+}
+
+.about-list li:last-child {
+  border-bottom: none;
+}
+
+.about-list li::before {
+  content: "▸";
+  position: absolute;
+  left: 0;
+  color: #ECDFCC;
+}
+
+.about-list li:hover {
+  color: #ECDFCC;
+  transition: color 0.2s ease;
+}
+
+/* Social Links */
+.about-social {
+  border: 1px solid #697565;
+  border-radius: 6px;
+  padding: 12px 20px;
+  display: block;
+  text-align: center;
+  margin: 50px auto 0 auto;
+  width: fit-content;
+}
+
+.about-social-link {
+  color: #697565;
+  text-decoration: none;
+  margin: 0 8px;
+  font-size: 0.9rem;
+  transition: color 0.2s ease;
+}
+
+.about-social-link:hover {
+  color: #ECDFCC;
+}
+
+/* Responsive Design */
+@media (max-width: 968px) {
+  .about-hero {
+    grid-template-columns: 1fr;
+    gap: 40px;
+    text-align: center;
+  }
+  .about-right {
+    padding-left: 0;
+  }
+  .about-lists {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+}
+@media (max-width: 768px) {
+  .about-container {
+    padding: 20px 15px;
+  }
+  .about-photo,
+  .about-photo-placeholder {
+    width: 150px;
+    height: 150px;
+  }
+  .about-name {
+    font-size: 1.5rem;
+  }
+  .about-list-section {
+    padding: 20px;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */

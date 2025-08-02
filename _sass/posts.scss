@@ -1,0 +1,42 @@
+
+// Category tabs
+.categories {
+  border: 1px solid #697565;
+  border-radius: 6px;
+  padding: 12px 20px;
+  display: block;
+  text-align: center;
+  margin: 20px auto 50px auto;
+  width: fit-content;
+}
+  
+.category-link {
+  color: #697565;
+  text-decoration: none;
+  margin: 0 8px;
+  font-size: 0.9rem;
+  transition: color 0.2s ease;
+}
+  
+.category-link:hover {
+  color: #ECDFCC;
+}
+
+
+.post-item {
+  display: block;
+  position: relative;
+  line-height: 24px;
+  padding-bottom: 5px;
+  margin: 5px 0;
+}
+
+.post-summary {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.post-nav {
+  padding-top: 100px;
+  text-align: center;
+}

@@ -1,0 +1,176 @@
+/* About Page Layout */
+.about-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    font-family: "Courier", monospace;
+    color: #ECDFCC;
+  }
+  
+  /* Two Column Section */
+  .about-hero {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 60px;
+    margin-bottom: 80px;
+    align-items: start;
+  }
+  
+  /* Left Column - Photo and Header */
+  .about-left {
+    text-align: center;
+  }
+  
+  .about-photo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 200px;
+    height: 200px;
+    border-radius: 8px;
+    object-fit: cover;
+    margin-bottom: 20px;
+    border: 2px solid #697565;
+  }
+  
+  .about-name {
+    font-size: 1.8rem;
+    font-weight: 400;
+    margin-bottom: 8px;
+    color: #ECDFCC;
+  }
+  
+  .about-title {
+    font-size: 1rem;
+    color: #697565;
+    font-weight: 300;
+  }
+  
+  /* Right Column - Description */
+  .about-right {
+    padding-left: 20px;
+  }
+  
+  .about-description {
+    font-size: 1rem;
+    line-height: 1.7;
+    color: #ECDFCC;
+  }
+  
+  .about-description p {
+    margin-bottom: 20px;
+  }
+  
+  /* Skills and Tools Section */
+  .about-lists {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    margin-top: 60px;
+  }
+  
+  .about-list-section {
+    // background-color: rgba(105, 117, 101, 0.1);
+    padding: 30px;
+    border-radius: 5px;
+    border: 1px solid #697565;
+  }
+  
+  .about-list-title {
+    font-size: 1.3rem;
+    font-weight: 400;
+    margin-bottom: 20px;
+    color: #ECDFCC;
+    text-align: center;
+  }
+  
+  .about-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .about-list li {
+    padding: 8px 0;
+    border-bottom: 1px solid rgba(105, 117, 101, 0.2);
+    color: #697565;
+    position: relative;
+    padding-left: 20px;
+  }
+  
+  .about-list li:last-child {
+    border-bottom: none;
+  }
+  
+  .about-list li::before {
+    content: "▸";
+    position: absolute;
+    left: 0;
+    color: #ECDFCC;
+  }
+  
+  .about-list li:hover {
+    color: #ECDFCC;
+    transition: color 0.2s ease;
+  }
+
+/* Social Links */
+.about-social {
+    border: 1px solid #697565;
+    border-radius: 6px;
+    padding: 12px 20px;
+    display: block;
+    text-align: center;
+    margin: 50px auto 0 auto;
+    width: fit-content;
+}
+    
+.about-social-link {
+    color: #697565;
+    text-decoration: none;
+    margin: 0 8px;
+    font-size: 0.9rem;
+    transition: color 0.2s ease;
+}
+    
+.about-social-link:hover {
+    color: #ECDFCC;
+}
+  
+  /* Responsive Design */
+  @media (max-width: 968px) {
+    .about-hero {
+      grid-template-columns: 1fr;
+      gap: 40px;
+      text-align: center;
+    }
+    
+    .about-right {
+      padding-left: 0;
+    }
+    
+    .about-lists {
+      grid-template-columns: 1fr;
+      gap: 40px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .about-container {
+      padding: 20px 15px;
+    }
+    
+    .about-photo,
+    .about-photo-placeholder {
+      width: 150px;
+      height: 150px;
+    }
+    
+    .about-name {
+      font-size: 1.5rem;
+    }
+    
+    .about-list-section {
+      padding: 20px;
+    }
+  }
