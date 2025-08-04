@@ -1,7 +1,7 @@
 # Site Specific Configuration
 name: nathan dixon
 description: my personal site.
-url: https://example.com
+url: https://nathandixon.dev
 author: nateJDXN
 timezone: America/New York
 timezone_short: EST
@@ -33,8 +33,8 @@ pagination:
 autopages:
   enabled: true
   categories:
-    title: 'Posts in category :cat'
-    permalink: '/category/:cat'
+    title: 'Posts in category :general'
+    permalink: '/category/:general'
     silent: false
 
 # Exclusions
