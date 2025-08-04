@@ -19,7 +19,7 @@ title: about
 			Hi! I'm Nate.
 		</p>
         <p>
-            I'm 4th year university student at the George Washington University pursuing a Computer Science major and a Management and Leadership minor. I am interested in leveraging current and emerging technologies to ensure that tomorrow's technology is equitable and accessible to all, especially those in historically underprivileged communities.
+            I'm a 4th year university student at the George Washington University pursuing a Computer Science major and a Management and Leadership minor. I am interested in leveraging current and emerging technologies to ensure that tomorrow's technology is equitable and accessible to all, especially those in historically underprivileged communities.
         </p>
         <p>
             As I work to finish my undergraduate degree, I am looking for work environments that challenge status quos and embrace new ideas brought to the table. I thrive in fast-paced team settings that value collaboration and innovation. 
