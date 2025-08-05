@@ -1,6 +1,7 @@
 # Site Specific Configuration
 name: nathan dixon
 description: my personal site.
+domain: nathandixon.dev
 url: https://nathandixon.dev
 author: nateJDXN
 timezone: America/New York
@@ -40,8 +41,8 @@ autopages:
 # Exclusions
 exclude: [ 'README.md' ]
 
-# Plugins
-plugins:
+# gems (plugins)
+gems:
   - jekyll-feed
   - jekyll-paginate-v2
   - jekyll-seo-tag
