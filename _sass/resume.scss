@@ -1,111 +1,111 @@
 /* Button Controls */
 .resume-controls {
-    display: flex;
-    justify-content: center;
-    gap: 15px;
-    padding: 20px 0;
-    background-color: #1E201E;
-    position: sticky;
-    top: 0;
-    z-index: 100;
-  }
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  padding: 20px 0;
+  background-color: #1E201E;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
   
-  .resume-btn {
-    padding: 10px 20px;
-    border: 1px solid #697565;
-    background-color: transparent;
-    color: #ECDFCC;
-    text-decoration: none;
-    font-family: "Courier", monospace;
-    font-size: 14px;
-    border-radius: 4px;
-    transition: all 0.2s ease;
-    cursor: pointer;
-    display: inline-flex;
-    align-items: center;
-    gap: 8px;
-  }
-  
-  .resume-btn:hover {
-    background-color: #697565;
-    color: #1E201E;
-  }
-  
-  .resume-btn.active {
-    background-color: #ECDFCC;
-    color: #1E201E;
-    border-color: #ECDFCC;
-  }
+.resume-btn {
+  padding: 10px 20px;
+  border: 1px solid #697565;
+  background-color: transparent;
+  color: #ECDFCC;
+  text-decoration: none;
+  font-family: "Courier", monospace;
+  font-size: 14px;
+  border-radius: 4px;
+  transition: all 0.2s ease;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.resume-btn:hover {
+  background-color: #697565;
+  color: #1E201E;
+}
+
+.resume-btn.active {
+  background-color: #ECDFCC;
+  color: #1E201E;
+  border-color: #ECDFCC;
+}
 
 /* PDF Embedding Styles */
 .pdf {
-    width: 100%;
-    height: 100vh;
-    border: none;
-    display: block;
-  }
-  
-  /* Container for better control */
-  .pdf-container {
-    width: 100%;
-    height: 100vh;
-    overflow: hidden;
-    position: relative;
-  }
-  
-  /* Fallback message styling */
-  .pdf-fallback {
-    text-align: center;
-    padding: 40px 20px;
-    color: #697565;
-    font-family: "Courier", monospace;
-  }
-  
-  .pdf-fallback a {
-    color: #ECDFCC;
-    text-decoration: underline;
-  }
-  
-  .pdf-fallback a:hover {
-    color: #697565;
-  }
+  width: 100%;
+  height: 100vh;
+  border: none;
+  display: block;
+}
+
+/* Container for better control */
+.pdf-container {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+}
+
+/* Fallback message styling */
+.pdf-fallback {
+  text-align: center;
+  padding: 40px 20px;
+  color: #697565;
+  font-family: "Courier", monospace;
+}
+
+.pdf-fallback a {
+  color: #ECDFCC;
+  text-decoration: underline;
+}
+
+.pdf-fallback a:hover {
+  color: #697565;
+}
 
 /* Loading state */
 .pdf-loading {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: calc(100vh - 80px);
-    color: #697565;
-    font-family: "Courier", monospace;
-  }
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: calc(100vh - 80px);
+  color: #697565;
+  font-family: "Courier", monospace;
+}
 
 /* Button icons */
 .btn-icon {
-    font-size: 12px;
+  font-size: 12px;
 }
-  
+
 /* Responsive adjustments */
 @media (max-width: 768px) {
-    .resume-controls {
-        padding: 15px 0;
-        gap: 10px;
-      }
-      
-      .resume-btn {
-        padding: 8px 16px;
-        font-size: 12px;
-      }
-      
-      .pdf {
-        height: calc(100vh - 60px);
-      }
-      
-      .pdf-container {
-        height: calc(100vh - 60px);
-      }
-      
-      .pdf-loading {
-        height: calc(100vh - 60px);
-      }
+  .resume-controls {
+      padding: 15px 0;
+      gap: 10px;
+    }
+    
+    .resume-btn {
+      padding: 8px 16px;
+      font-size: 12px;
+    }
+    
+    .pdf {
+      height: calc(100vh - 60px);
+    }
+    
+    .pdf-container {
+      height: calc(100vh - 60px);
+    }
+    
+    .pdf-loading {
+      height: calc(100vh - 60px);
+    }
 }

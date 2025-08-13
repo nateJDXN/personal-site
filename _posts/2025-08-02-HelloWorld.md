@@ -2,6 +2,7 @@
 layout: post
 author: nateJDXN
 title: Hello World!
+categories: updates
 ---
 
 ## Hello and welcome to my first blog post!

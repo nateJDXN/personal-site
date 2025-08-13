@@ -1,9 +1,9 @@
 ---
 layout: default
 title: posts
-pagination:
-    enabled: true
-    per_page: 10
+# pagination:
+#     enabled: true
+#     per_page: 10
 ---
 
 <div>
