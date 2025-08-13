@@ -1,5 +1,6 @@
 source "https://rubygems.org"
-gem "jekyll", "~> 4.4.1"
+gem "jekyll", "~> 3.10.0"
+gem "github-pages", "~> 232", group: :jekyll_plugins
 gem "jekyll-feed", "~> 0.12"
 
 # Performance-booster for watching directories on Windows

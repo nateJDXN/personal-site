@@ -1,5 +1,5 @@
 # Site Specific Configuration
-name: nathan dixon
+title: nathan dixon
 description: my personal site.
 url: https://nathandixon.dev
 author: nateJDXN
@@ -41,7 +41,7 @@ autopages:
 exclude: [ 'README.md' ]
 
 # Plugins
-plugins:
+gems:
   - jekyll-feed
   - jekyll-paginate-v2
   - jekyll-seo-tag
