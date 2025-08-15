@@ -109,26 +109,27 @@
   color: #ECDFCC;
 }
 
-.about-list li:hover {
+.about-list li:hover { 
   color: #ECDFCC;
   transition: color 0.2s ease;
 }
 
 /* Social Links */
 .about-social {
-  border: 1px solid #697565;
-  border-radius: 6px;
+  // border: 1px solid #697565;
+  // border-radius: 6px;
   padding: 12px 20px;
-  display: block;
+  display: flex;
   text-align: center;
   margin: 50px auto 0 auto;
   width: fit-content;
+
 }
   
 .about-social-link {
   color: #697565;
   text-decoration: none;
-  margin: 0 8px;
+  margin: 0 15px;
   font-size: 0.9rem;
   transition: color 0.2s ease;
 }

@@ -7,6 +7,6 @@ gem "jekyll-feed", "~> 0.12"
 gem "wdm", "~> 0.1", :platforms => [:mingw, :x64_mingw, :mswin]
 
 # LightSpeed Requirements
-gem "jekyll-seo-tag", "~> 2.8.0"
-gem "jekyll-paginate-v2"
+gem "jekyll-seo-tag"
+gem "jekyll-paginate"
 gem "webrick"

@@ -23,20 +23,22 @@ sass:
   style: expanded # compact, expanded or compressed
 
 # Paginate
-pagination:
-  enabled: true
-  # Value set low for demonstration purposes
-  per_page: 3
-  sort_field: 'date'
-  sort_reverse: true
+paginate: 3
+paginate_path: "/posts/page:num"
+# pagination:
+#   enabled: true
+#   # Value set low for demonstration purposes
+#   per_page: 3
+#   sort_field: 'date'
+#   sort_reverse: true
 
-# Category Paginating
-autopages:
-  enabled: true
-  categories:
-    title: 'Posts in category :general'
-    permalink: '/category/:general'
-    silent: false
+# # Category Paginating
+# autopages:
+#   enabled: true
+#   categories:
+#     title: 'Posts in category :general'
+#     permalink: '/category/:general'
+#     silent: false
 
 # Exclusions
 exclude: [ 'README.md' ]
