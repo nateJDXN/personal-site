@@ -8,5 +8,5 @@ gem "wdm", "~> 0.1", :platforms => [:mingw, :x64_mingw, :mswin]
 
 # LightSpeed Requirements
 gem "jekyll-seo-tag"
-gem "jekyll-paginate-v2"
+gem "jekyll-paginate"
 gem "webrick"

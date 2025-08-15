@@ -22,15 +22,6 @@
   color: #ECDFCC;
 }
 
-
-.post-item {
-  display: block;
-  position: relative;
-  line-height: 24px;
-  padding-bottom: 5px;
-  margin: 5px 0;
-}
-
 .post-summary {
   padding-top: 30px;
   padding-bottom: 30px;
@@ -39,4 +30,16 @@
 .post-nav {
   padding-top: 100px;
   text-align: center;
+}
+
+.post-item {
+  display: block;
+  margin-bottom: 10px;
+  padding: 5px 0;
+  border-bottom: 1px solid #eee;
+  transition: color 0.2s ease;
+}
+
+.post-item:hover {
+  color: #ECDFCC
 }
