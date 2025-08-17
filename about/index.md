@@ -38,8 +38,8 @@ title: about
         <li>Python</li>
 		<li>Javascript</li>
         <li>Git & GitHub</li>
-		<li>Figma</li>
-		<li>Docker</li>
+        <li>Figma</li>
+        <li>Docker</li>
         <li>Photoshop</li>
       </ul>
     </div>
