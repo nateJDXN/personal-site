@@ -15,9 +15,9 @@ title: about
     <!-- Right Column - Description -->
     <div class="about-right">
       <div class="about-description">
-	  	<p>
-			Hi! I'm Nate.
-		</p>
+	  	  <p>
+			    Hi! I'm Nate.
+		    </p>
         <p>
             I'm a 4th year university student at the George Washington University pursuing a Computer Science major and a Management and Leadership minor. I am interested in leveraging current and emerging technologies to ensure that tomorrow's technology is equitable and accessible to all, especially those in historically underprivileged communities.
         </p>
