@@ -37,7 +37,7 @@ title: about
         <li>Java</li>
         <li>Python</li>
 		<li>Javascript</li>
-        <li>Git & GitHub</li>
+        <li>Git and GitHub</li>
         <li>Figma</li>
         <li>Docker</li>
         <li>Photoshop</li>
