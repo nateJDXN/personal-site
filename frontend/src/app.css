@@ -1,0 +1,139 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ─── CSS Custom Properties ────────────────────────────────────────── */
+:root {
+  --font-mono: 'JetBrains Mono', monospace;
+
+  --color-bg: #0a0e1a;
+  --color-surface: #111827;
+  --color-surface-2: #1a2535;
+  --color-border: #1e3a5f;
+  --color-accent: #00d4ff;
+  --color-accent2: #00ff88;
+  --color-text: #c8d8e8;
+  --color-dim: #4a6a8a;
+  --color-warn: #ffaa00;
+  --color-error: #ff4444;
+
+  --radius: 2px;
+  --taskbar-h: 36px;
+  --window-title-h: 28px;
+
+  /* ─── Desk Scene Colors (City Pop / Retro Mac palette) ─── */
+  --color-scene-desk:   #6e90a5;
+  --color-scene-wall:   #b8c0b0;
+  --color-scene-cream:  #d0c8b8;
+  --color-scene-beige:  #c8c0af;
+  --color-scene-shadow: #2a2520;
+  --color-scene-haze:   #8a9ba8;
+}
+
+/* ─── Reset / Base ──────────────────────────────────────────────────── */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background: #000; /* DeskScene owns the scene background */
+  color: var(--color-text);
+  font-family: var(--font-mono);
+  font-size: 13px;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* ─── Scanline Overlay ──────────────────────────────────────────────── */
+.scanlines {
+  pointer-events: none;
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  background: repeating-linear-gradient(
+    0deg,
+    transparent,
+    transparent 2px,
+    rgba(0, 0, 0, 0.08) 2px,
+    rgba(0, 0, 0, 0.08) 4px
+  );
+}
+
+/* subtle vignette */
+.scanlines::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(ellipse at center, transparent 60%, rgba(0, 0, 0, 0.45) 100%);
+}
+
+/* ─── CRT Flicker ───────────────────────────────────────────────────── */
+@keyframes flicker {
+  0%, 100% { opacity: 1; }
+  92% { opacity: 1; }
+  93% { opacity: 0.92; }
+  94% { opacity: 1; }
+  96% { opacity: 0.97; }
+  97% { opacity: 1; }
+}
+
+.crt-flicker {
+  animation: flicker 8s infinite;
+}
+
+/* ─── Cursor blink ──────────────────────────────────────────────────── */
+@keyframes blink {
+  0%, 49% { opacity: 1; }
+  50%, 100% { opacity: 0; }
+}
+
+.cursor-blink {
+  display: inline-block;
+  width: 8px;
+  height: 1em;
+  background: var(--color-accent);
+  vertical-align: text-bottom;
+  animation: blink 1s step-end infinite;
+}
+
+/* ─── Scrollbars ────────────────────────────────────────────────────── */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: var(--color-surface);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--color-border);
+  border-radius: 0;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-dim);
+}
+
+/* ─── Selection ─────────────────────────────────────────────────────── */
+::selection {
+  background: var(--color-accent);
+  color: var(--color-bg);
+}
+
+/* ─── Utility ───────────────────────────────────────────────────────── */
+.glow-text {
+  text-shadow: 0 0 8px currentColor;
+}
+
+.border-pixel {
+  border: 1px solid var(--color-border);
+}
+
+.window-shadow {
+  box-shadow:
+    0 0 0 1px var(--color-border),
+    0 8px 32px rgba(0, 0, 0, 0.6),
+    0 0 40px rgba(0, 212, 255, 0.04);
+}

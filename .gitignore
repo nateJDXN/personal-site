@@ -1,7 +1,8 @@
-_site/
-.sass-cache/
-.jekyll-cache/
-.jekyll-metadata
-.bundle/
-vendor/
-Gemfile.lock
+node_modules/
+.svelte-kit/
+backend/pb_data/
+frontend/.env
+.DS_Store
+*.env.local
+dist/
+build/
