@@ -41,7 +41,7 @@ paginate_path: "/posts/page:num"
 #     silent: false
 
 # Exclusions
-exclude: [ 'README.md' ]
+exclude: [ 'README.md', 'scripts' ]
 
 # gems (plugins)
 gems:

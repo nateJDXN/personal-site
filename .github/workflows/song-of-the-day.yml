@@ -1,0 +1,42 @@
+name: Update song of the day
+
+on:
+  schedule:
+    - cron: '0 11 * * *' # daily, 6am EST / 7am EDT
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: song-of-the-day
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Fetch latest tracks
+        run: node scripts/update-song-of-the-day.js
+        env:
+          SPOTIFY_CLIENT_ID: ${{ secrets.SPOTIFY_CLIENT_ID }}
+          SPOTIFY_CLIENT_SECRET: ${{ secrets.SPOTIFY_CLIENT_SECRET }}
+          SPOTIFY_REFRESH_TOKEN: ${{ secrets.SPOTIFY_REFRESH_TOKEN }}
+
+      - name: Commit if changed
+        run: |
+          if git diff --quiet -- _data/song_of_the_day.yml; then
+            echo "No changes."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add _data/song_of_the_day.yml
+          git commit -m "Update song of the day"
+          git push

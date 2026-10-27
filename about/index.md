@@ -12,14 +12,14 @@ title: about
         <source srcset="{{ 'assets/images/headshot.webp' | relative_url }}" type="image/webp">
         <img src="{{ 'assets/images/headshot.jpg' | relative_url }}" alt="headshot" class="about-photo" width="200" height="200" fetchpriority="high" decoding="async">
       </picture>
-      <h1 class="about-name">nate dixon</h1>
+      <h1 class="about-name">nathan dixon</h1>
       <p class="about-title">developer, designer, problem solver</p>
     </div>
     <!-- Right Column - Description -->
     <div class="about-right">
       <div class="about-description">
 	  	  <p>
-			    Hi! I'm Nate.
+			    Hi! I'm Nathan.
 		    </p>
         <p>
             I'm a 4th year university student at the George Washington University pursuing a Computer Science major and a Management and Leadership minor. I am interested in leveraging current and emerging technologies to ensure that tomorrow's technology is equitable and accessible to all, especially those in historically underprivileged communities.

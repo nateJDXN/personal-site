@@ -1,0 +1,8 @@
+# Song of the day player (home page only).
+# playlist: the Spotify playlist ID (from open.spotify.com/playlist/<id>)
+# tracks: played in order, top to bottom. id is from open.spotify.com/track/<id>
+playlist: "718EeYFBKGNj4EDXUTGYoQ"
+tracks: []
+#  - id: "4uLU6hMCjMI75M1A2tKUQC"
+#    title: "Song Name"
+#    artist: "Artist"
