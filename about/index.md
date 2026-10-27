@@ -8,7 +8,10 @@ title: about
   <div class="about-hero">
     <!-- Left Column - Photo and Header -->
     <div class="about-left">
-      <img src="{{ 'assets/images/headshot.png' | relative_url }}" alt="headshot" class="about-photo">
+      <picture>
+        <source srcset="{{ 'assets/images/headshot.webp' | relative_url }}" type="image/webp">
+        <img src="{{ 'assets/images/headshot.jpg' | relative_url }}" alt="headshot" class="about-photo" width="200" height="200" fetchpriority="high" decoding="async">
+      </picture>
       <h1 class="about-name">nate dixon</h1>
       <p class="about-title">developer, designer, problem solver</p>
     </div>
