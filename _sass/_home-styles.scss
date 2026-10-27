@@ -228,14 +228,18 @@ html, body {
   font-variant-numeric: tabular-nums;
 }
 
-/* Spotify's iframe must exist for audio to play; keep it off-screen */
+/* Spotify's iframe must exist for audio to play. It has to stay inside the
+   viewport (Chrome throttles off-screen cross-origin frames), so it's
+   invisible and click-through instead of moved off-screen */
 .sotd-embed {
   position: fixed;
-  left: -10000px;
-  top: 0;
+  right: 0;
+  bottom: 0;
   width: 300px;
   height: 80px;
   overflow: hidden;
+  opacity: 0;
+  pointer-events: none;
 }
 
 @media (max-width: 768px) {
