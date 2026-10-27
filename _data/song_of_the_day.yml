@@ -1,8 +1,20 @@
 # Song of the day player (home page only).
 # playlist: the Spotify playlist ID (from open.spotify.com/playlist/<id>)
-# tracks: played in order, top to bottom. id is from open.spotify.com/track/<id>
+# tracks: newest first. Updated daily by .github/workflows/song-of-the-day.yml
 playlist: "718EeYFBKGNj4EDXUTGYoQ"
-tracks: []
-#  - id: "4uLU6hMCjMI75M1A2tKUQC"
-#    title: "Song Name"
-#    artist: "Artist"
+tracks:
+  - id: "5sHEmVAiepdGCj0rHtLYFO"
+    title: "Anenome"
+    artist: "The Brian Jonestown Massacre"
+  - id: "53VS3tjssARzYcVoyG5vXE"
+    title: "All That We Perceive"
+    artist: "Thievery Corporation"
+  - id: "6Ln925OSRltryDENN5hjQK"
+    title: "CHROMA 008 TANGZ"
+    artist: "BICEP, ELIZA"
+  - id: "21TV7f41eVauo2erCjLqs4"
+    title: "The Knife - Bubble Love Remix"
+    artist: "Ross from Friends, Bubble Love"
+  - id: "1SOTqkhpIWoLX1AS9Y2RpU"
+    title: "Coconut Mall (From \"Mario Kart Wii\")"
+    artist: "Arcade Player"
