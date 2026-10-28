@@ -3,6 +3,9 @@
 # tracks: newest first. Updated daily by .github/workflows/song-of-the-day.yml
 playlist: "718EeYFBKGNj4EDXUTGYoQ"
 tracks:
+  - id: "3UYuDTslR35thjQzaVwRMe"
+    title: "Get Down"
+    artist: "Nas"
   - id: "5sHEmVAiepdGCj0rHtLYFO"
     title: "Anenome"
     artist: "The Brian Jonestown Massacre"
@@ -15,6 +18,3 @@ tracks:
   - id: "21TV7f41eVauo2erCjLqs4"
     title: "The Knife - Bubble Love Remix"
     artist: "Ross from Friends, Bubble Love"
-  - id: "1SOTqkhpIWoLX1AS9Y2RpU"
-    title: "Coconut Mall (From \"Mario Kart Wii\")"
-    artist: "Arcade Player"
