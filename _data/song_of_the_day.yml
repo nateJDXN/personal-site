@@ -3,6 +3,9 @@
 # tracks: newest first. Updated daily by .github/workflows/song-of-the-day.yml
 playlist: "718EeYFBKGNj4EDXUTGYoQ"
 tracks:
+  - id: "1VQ1Xehsr1GYk1cxd5olji"
+    title: "K-VAMP"
+    artist: "Villager"
   - id: "3UYuDTslR35thjQzaVwRMe"
     title: "Get Down"
     artist: "Nas"
@@ -15,6 +18,3 @@ tracks:
   - id: "6Ln925OSRltryDENN5hjQK"
     title: "CHROMA 008 TANGZ"
     artist: "BICEP, ELIZA"
-  - id: "21TV7f41eVauo2erCjLqs4"
-    title: "The Knife - Bubble Love Remix"
-    artist: "Ross from Friends, Bubble Love"
